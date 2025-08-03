@@ -89,6 +89,7 @@ AI becomes an integrated part of daily workflows, providing contextual assistanc
 - **Metrics**: 25-40% faster code writing, 30% reduction in simple bugs
 
 #### 7. Continuous Architecture and Design Review
+Caveat: This one is a heavy lift and strays into Step 4
 **Scenario**: Real-time architectural guidance and design pattern recommendations
 - **Implementation**: Custom GPTs trained on company architecture standards and best practices
 - **Value**: Consistent design decisions, improved code quality, faster architectural convergence

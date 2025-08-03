@@ -16,6 +16,8 @@ This transformation follows a deliberate four-step progression, where each stage
 4. **AI as a Teammate**: Full integration into team processes and culture
 
 ---
+Caveat: "Metrics" values, below, are simplistic swags to give you a sense for what you should expect. Tune them liberally to better reflect your organization's potential.
+---
 
 ## Step 1: AI as a Micro-tasker
 *Foundation: Individual Productivity Enhancement*

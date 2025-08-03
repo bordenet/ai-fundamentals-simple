@@ -344,4 +344,8 @@ The future belongs to AI-First engineering teams. The question is not whether to
 5. **Scale Systematically**: Progress through each step with careful measurement and adjustment
 6. **Celebrate Success**: Recognize and communicate wins to maintain momentum and organizational support
 
+
+### Good Reads
+* [Most AI Strategies Fail for This](https://decision.substack.com/p/most-ai-strategies-fail-for-this) -- _Being AI-First is being Systems-First_
+
 The journey to AI-First engineering culture begins with a single step. Start today, and begin building the future of software engineering.

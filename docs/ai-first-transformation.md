@@ -56,7 +56,7 @@ At this foundational stage, team members begin using AI for discrete, well-defin
 - **Metrics**: 40% faster issue resolution, improved junior developer productivity
 
 ### Implementation Strategy
-Ensure team members share ideas, experiments, and lessons learned from Day One. One solution is to establish and encourage adoption of a dedicated Slack channel. (e.g. #AI-First) Reward adoption based, understanding what motivates each respective person as you go about this. Help ensure team members aren't too shy or hesitant to contribute.
+Ensure team members share ideas, experiments, and lessons learned from Day One. One solution is to establish and encourage adoption of a dedicated Slack channel. (e.g. #AI-First) Reward adoption, keeping in mind what type of feedback and/or recognition motivates each respective person. Help ensure team members aren't too shy or hesitant to contribute.
 - **Week 1-2**: Introduce basic AI tools and use cases
 - **Week 3-4**: Establish team best practices and guidelines
 - **Month 2**: Measure productivity gains and identify power users

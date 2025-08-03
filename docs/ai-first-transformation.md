@@ -15,6 +15,8 @@ This transformation follows a deliberate four-step progression, where each stage
 3. **AI as a Delegate**: Autonomous task execution and orchestration
 4. **AI as a Teammate**: Full integration into team processes and culture
 
+_AI-First culture doesn't mean building tools from scratch. Each of the following scenarios will necessitate "buy-vs-build" discussions._
+
 ---
 
 > [!NOTE]
@@ -82,40 +84,42 @@ AI becomes an integrated part of daily workflows, providing contextual assistanc
 
 ### Top 5 Transformation Scenarios
 
-#### 6. Intelligent Code Completion and Pair Programming
-**Scenario**: AI-powered development environment that suggests code, identifies patterns, and prevents errors
-- **Implementation**: GitHub Copilot, Cursor, or similar IDE integrations
-- **Value**: Faster development, fewer bugs, learning new patterns and languages
-- **Metrics**: 25-40% faster code writing, 30% reduction in simple bugs
-
-#### 7. Continuous Architecture and Design Review
-Caveat: This one is a heavy lift and strays into Step 4
-**Scenario**: Real-time architectural guidance and design pattern recommendations
-- **Implementation**: Custom GPTs trained on company architecture standards and best practices
-- **Value**: Consistent design decisions, improved code quality, faster architectural convergence
-- **Metrics**: 50% reduction in architecture review cycles, improved design consistency
-
-#### 8. Intelligent Task and Priority Management
-**Scenario**: AI-powered project management that suggests task prioritization and resource allocation
-- **Implementation**: Integration with Jira, Linear, or project management tools via AI agents
-- **Value**: Better sprint planning, optimal resource utilization, proactive risk identification
-- **Metrics**: 20% improvement in sprint completion rates, better prediction accuracy
-
-#### 9. Contextual Learning and Skill Development
-**Scenario**: Personalized learning recommendations based on current work and career goals
-- **Implementation**: AI companions that track work patterns and suggest relevant learning resources
-- **Value**: Continuous skill improvement, better career development, increased job satisfaction
-- **Metrics**: 3x increase in skill acquisition rate, improved employee retention
-
-#### 10. Intelligent Code Review Preparation
+#### 6. Intelligent Code Review Preparation
 **Scenario**: AI pre-reviews code before human review, suggesting improvements and identifying issues
 - **Implementation**: Automated pre-review systems that check style, logic, and best practices
 - **Value**: Higher quality code reviews, faster review cycles, better learning outcomes
 - **Metrics**: 40% faster code review cycles, 60% reduction in review iterations
 
+#### 7. Intelligent Code Completion and Pair Programming
+**Scenario**: AI-powered development environment that suggests code, identifies patterns, and prevents errors
+- **Implementation**: GitHub Copilot, Cursor, or similar IDE integrations
+- **Value**: Faster development, fewer bugs, learning new patterns and languages
+- **Metrics**: 25-40% faster code writing, 30% reduction in simple bugs
+
+#### 8. Continuous Architecture and Design Review
+
+_Caveat: This one is a heavy lift and strays into Step 4_
+
+**Scenario**: Real-time architectural guidance and design pattern recommendations
+- **Implementation**: Custom GPTs trained on company architecture standards and best practices
+- **Value**: Consistent design decisions, improved code quality, faster architectural convergence
+- **Metrics**: 50% reduction in architecture review cycles, improved design consistency
+
+#### 9. Intelligent Task and Priority Management
+**Scenario**: AI-powered project management that suggests task prioritization and resource allocation
+- **Implementation**: Integration with Jira, Linear, or project management tools via AI agents
+- **Value**: Better sprint planning, optimal resource utilization, proactive risk identification
+- **Metrics**: 20% improvement in sprint completion rates, better prediction accuracy
+
+#### 10. Contextual Learning and Skill Development
+**Scenario**: Personalized learning recommendations based on current work and career goals
+- **Implementation**: AI companions that track work patterns and suggest relevant learning resources
+- **Value**: Continuous skill improvement, better career development, increased job satisfaction
+- **Metrics**: 3x increase in skill acquisition rate, improved employee retention
+
 ### Implementation Strategy
 - **Month 1**: Deploy AI-powered development tools
-- **Month 2**: Create custom GPTs for company-specific processes
+- **Month 2**: Create custom GPTs for company-specific processes. This will likely take longer to _finish_ if training data isn't already canonicalized.
 - **Month 3**: Integrate AI into project management workflows
 - **Month 4**: Establish AI companion best practices and training
 

@@ -1,0 +1,3 @@
+# Production dependencies
+# Currently this is a documentation repository with no production Python code
+# Add production dependencies here as needed

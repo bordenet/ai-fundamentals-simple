@@ -1,0 +1,52 @@
+[flake8]
+# Maximum line length
+max-line-length = 100
+
+# Exclude patterns
+exclude =
+    .git,
+    __pycache__,
+    .venv,
+    venv,
+    env,
+    .eggs,
+    *.egg,
+    build,
+    dist,
+    .tox,
+    .pytest_cache,
+    .mypy_cache,
+    node_modules
+
+# Error codes to ignore
+ignore =
+    # W503: line break before binary operator (conflicts with black)
+    W503,
+    # E203: whitespace before ':' (conflicts with black)
+    E203,
+    # D100: Missing docstring in public module (too strict for all files)
+    D100,
+    # D104: Missing docstring in public package
+    D104
+
+# Select specific error codes to check
+select =
+    E,  # pycodestyle errors
+    W,  # pycodestyle warnings
+    F,  # pyflakes
+    C,  # mccabe complexity
+    B,  # flake8-bugbear
+    N,  # pep8-naming
+
+# Maximum complexity
+max-complexity = 10
+
+# Docstring conventions
+docstring-convention = google
+
+# Per-file ignores
+per-file-ignores =
+    # Tests don't need docstrings
+    tests/*:D,
+    # __init__.py files don't need docstrings
+    __init__.py:D,F401

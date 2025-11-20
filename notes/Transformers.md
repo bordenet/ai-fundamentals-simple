@@ -88,4 +88,3 @@ T4 |  ●   ○   ●   ●
 Tokens attend to **local neighbors**, **global tokens**, or follow a **pattern** — reducing computation.
 
 ---
-

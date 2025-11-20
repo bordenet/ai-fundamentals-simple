@@ -275,3 +275,112 @@ Comprehensive conceptual guides in the `instructor/` directory:
 - Strategic planning frameworks
 - Technology assessment capabilities
 - Implementation roadmap development
+
+## Development Setup
+
+This repository includes Python code quality tools and pre-commit hooks to maintain code standards.
+
+### Prerequisites
+- Python 3.9 or higher
+- Git
+
+### Initial Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/ai-fundamentals-simple.git
+   cd ai-fundamentals-simple
+   ```
+
+2. **Create and activate a virtual environment**
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   ```
+
+3. **Install development dependencies**
+   ```bash
+   pip install -r requirements-dev.txt
+   ```
+
+4. **Install pre-commit hooks**
+   ```bash
+   pre-commit install
+   ```
+
+### Development Commands
+
+The project includes a Makefile with common development tasks:
+
+```bash
+make help               # Show all available commands
+make install-dev        # Install development dependencies
+make test               # Run tests and linting
+make lint               # Run flake8 linting only
+make format             # Format code with black and isort
+make build              # Run full build with quality checks
+make clean              # Remove build artifacts and cache files
+make pre-commit-install # Install pre-commit hooks
+make pre-commit-run     # Run pre-commit on all files
+```
+
+### Code Quality Tools
+
+This project uses the following tools to maintain code quality:
+
+- **flake8**: Python linting with multiple plugins
+  - flake8-docstrings: Docstring style checking
+  - flake8-bugbear: Additional bug and design problem checks
+  - flake8-comprehensions: Comprehension improvements
+  - flake8-simplify: Code simplification suggestions
+  - pep8-naming: PEP 8 naming convention checks
+
+- **black**: Code formatting (line length: 100)
+- **isort**: Import sorting
+- **pytest**: Testing framework
+- **mypy**: Static type checking (optional)
+
+### Running Tests
+
+```bash
+# Run all tests and linting
+./scripts/test.sh
+# or
+make test
+
+# Run only linting
+make lint
+
+# Format code
+make format
+```
+
+### Pre-commit Hooks
+
+Pre-commit hooks automatically run on every commit to ensure code quality:
+
+- Trailing whitespace removal
+- End-of-file fixing
+- YAML/JSON validation
+- Large file detection
+- Merge conflict detection
+- Python linting (flake8)
+- Import sorting (isort)
+- Code formatting (black)
+
+To run pre-commit hooks manually on all files:
+```bash
+pre-commit run --all-files
+# or
+make pre-commit-run
+```
+
+### Configuration Files
+
+- `.flake8`: Flake8 configuration
+- `.pre-commit-config.yaml`: Pre-commit hooks configuration
+- `requirements.txt`: Production dependencies
+- `requirements-dev.txt`: Development dependencies
+- `Makefile`: Common development tasks
+- `scripts/test.sh`: Test runner script
+- `scripts/build.sh`: Build script with quality checks

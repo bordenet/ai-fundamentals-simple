@@ -24,8 +24,7 @@ def configure_logging(level: Optional[str] = None) -> None:
             },
             "detailed": {
                 "format": (
-                    "%(asctime)s - %(name)s - %(levelname)s - "
-                    "%(filename)s:%(lineno)d - %(funcName)s - %(message)s"
+                    "%(asctime)s - %(name)s - %(levelname)s - " "%(filename)s:%(lineno)d - %(funcName)s - %(message)s"
                 ),
                 "datefmt": "%Y-%m-%d %H:%M:%S",
             },

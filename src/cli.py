@@ -64,7 +64,7 @@ def validate_command(args: argparse.Namespace) -> int:
 
 
 def main() -> int:
-    """Main entry point.
+    """Run the CLI application.
 
     Returns:
         Exit code.

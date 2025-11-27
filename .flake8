@@ -1,6 +1,6 @@
 [flake8]
-# Maximum line length
-max-line-length = 100
+# Maximum line length (per bordenet Python Style Guide)
+max-line-length = 120
 
 # Exclude patterns
 exclude =
@@ -16,18 +16,15 @@ exclude =
     .tox,
     .pytest_cache,
     .mypy_cache,
-    node_modules
+    node_modules,
+    htmlcov
 
 # Error codes to ignore
 ignore =
     # W503: line break before binary operator (conflicts with black)
     W503,
     # E203: whitespace before ':' (conflicts with black)
-    E203,
-    # D100: Missing docstring in public module (too strict for all files)
-    D100,
-    # D104: Missing docstring in public package
-    D104
+    E203
 
 # Select specific error codes to check
 select =
@@ -37,16 +34,17 @@ select =
     C,  # mccabe complexity
     B,  # flake8-bugbear
     N,  # pep8-naming
+    D,  # pydocstyle
 
 # Maximum complexity
 max-complexity = 10
 
-# Docstring conventions
-docstring-convention = google
+# Docstring conventions (per bordenet Python Style Guide - PEP 257)
+docstring-convention = pep257
 
 # Per-file ignores
 per-file-ignores =
-    # Tests don't need docstrings
-    tests/*:D,
-    # __init__.py files don't need docstrings
-    __init__.py:D,F401
+    # Tests don't need module/package docstrings
+    tests/*:D100,D104,
+    # __init__.py files don't need module docstrings
+    __init__.py:D104,F401

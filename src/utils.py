@@ -70,10 +70,7 @@ class MarkdownValidator:
             if match := re.match(r"^(#{1,6})\s+", line):
                 level = len(match.group(1))
                 if level > prev_level + 1:
-                    msg = (
-                        f"{file_path}:{line_num}: "
-                        f"Header level skipped (from H{prev_level} to H{level})"
-                    )
+                    msg = f"{file_path}:{line_num}: " f"Header level skipped (from H{prev_level} to H{level})"
                     errors.append(msg)
                 prev_level = level
 

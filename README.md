@@ -1,80 +1,129 @@
 # AI Fundamentals for Technical Leaders
 
-Educational materials on AI concepts, terminology, and frameworks for engineering leaders.
+> **Created by Matt Bordenet, August 2025. Built with Claude Code.**
 
-## Overview
+No-code AI curriculum for engineering leaders. Six modules covering LLMs, transformers, RAG, MCP, and enterprise integration. Read time: 4-6 hours total.
 
-This repository contains documentation and guides covering AI fundamentals, with a focus on practical knowledge for technical decision-makers. Content includes explanations of LLM architecture, agentic AI systems, and enterprise integration patterns.
+## Who This Is For
 
-## Audience
+Engineering leaders who need to speak AI fluently in technical discussions and make informed adoption decisions. Covers what you need to know without requiring you to train models or write inference code.
 
-- Engineering leaders evaluating AI adoption
-- Technical staff learning AI concepts
-- Teams planning AI integration
+**Assumptions:** You know software architecture. You've used GitHub Copilot or ChatGPT. You don't know why transformers work or how to evaluate RAG vs fine-tuning.
 
-## Content
+## What You'll Learn
 
-### Directory Structure
+After completing this curriculum:
 
-- `instructor/` - Topic guides on LLM foundations, agentic AI, MCP, RAG systems, and enterprise integration
-- `docs/` - Reference materials and planning frameworks
-- `notes/` - Technical deep-dives on transformers and inference
+1. **Explain transformer architecture** to your team (attention, tokens, context windows)
+2. **Evaluate AI tools** for your stack (Copilot vs CodeWhisperer vs Claude vs Azure OpenAI)
+3. **Recognize when RAG beats fine-tuning** and when neither is the right choice
+4. **Understand MCP** and how agentic AI differs from chat interfaces
+5. **Estimate costs and latency** for production AI deployments
+6. **Identify AI security risks** specific to LLM-based systems
 
-## Topics Covered
+## Quick Start
 
-### LLM Foundations
-- Transformer architecture and attention mechanisms
-- Tokenization and context windows
-- Training and fine-tuning approaches
-- Enterprise AI tools (GitHub Copilot, CodeWhisperer, Claude, Azure OpenAI)
+```bash
+# Start here
+cat docs/getting_started.md
 
-### Inference and Implementation
-- Model serving architectures
-- Optimization techniques
-- API design for AI services
-- Monitoring and observability
+# Then work through modules in order
+ls instructor/
+# 01-llm-foundations.md      (45 min)
+# 02-agentic-ai.md           (30 min)
+# 03-mcp-implementation.md   (45 min)
+# 04-rag-systems.md          (45 min)
+# 05-enterprise-integration.md (30 min)
+# 06-pr-faq-validator.md     (case study, 30 min)
+```
 
-### Agentic AI
-- LangGraph framework
-- Agent design patterns
-- Multi-agent coordination
-- Tool integration
+## Curriculum
 
-### Model Context Protocol (MCP)
-- Architecture and design principles
-- Context management
-- Integration patterns
+### Module 1: LLM Foundations (45 min)
 
-### RAG Systems
-- Retrieval mechanisms
-- Vector databases
-- Hybrid search approaches
+How transformers work, why attention matters, what tokens actually are.
+
+| Topic | You'll Understand |
+|-------|-------------------|
+| Attention mechanism | Why "Attention Is All You Need" changed NLP |
+| Tokenization | Why GPT-4 charges per token, not per word |
+| Context windows | Why 128K context costs more than 8K |
+| Training vs inference | When to fine-tune, when to prompt-engineer |
+
+### Module 2: Enterprise AI Tools (30 min)
+
+Side-by-side comparison of tools your team is probably already using.
+
+| Tool | Best For | Watch Out For |
+|------|----------|---------------|
+| GitHub Copilot | IDE integration, code completion | Training data concerns |
+| Amazon CodeWhisperer | AWS-native, security scanning | Smaller model than Copilot |
+| Claude (Anthropic) | Long documents, reasoning tasks | API rate limits |
+| Azure OpenAI | Enterprise compliance, on-prem options | Complex pricing |
+
+### Module 3: Agentic AI & MCP (45 min)
+
+Agents aren't just chatbots. MCP is how they coordinate.
+
+- LangGraph: Stateful workflows with decision trees
+- Multi-agent patterns: When one LLM orchestrates others
+- Tool calling: How agents execute code, query databases, call APIs
+- MCP: The protocol for context sharing between agents
+
+### Module 4: RAG Systems (45 min)
+
+Retrieval-Augmented Generation: when to use it, how to build it.
+
+| Approach | Use When | Avoid When |
+|----------|----------|------------|
+| RAG | Data changes frequently, need citations | Latency-critical (<100ms) |
+| Fine-tuning | Stable domain, specific style needed | Data changes often |
+| Prompt engineering | Quick iteration, small dataset | Complex reasoning required |
+
+### Module 5: Enterprise Integration (30 min)
+
+Production concerns: latency, cost, security, compliance.
+
+- **Cost modeling**: GPT-4 at scale costs $X per 1M tokens (do the math for your volume)
+- **Latency budgets**: Streaming vs batch, cold start penalties
+- **Security**: Prompt injection, data leakage, output filtering
+- **Compliance**: SOC2, HIPAA considerations for AI workloads
+
+### Module 6: Case Study (30 min)
+
+Real implementation: [pr-faq-validator](https://github.com/bordenet/pr-faq-validator) - a Go tool that scores documents without an LLM (deterministic), plus optional GPT-4 feedback.
+
+---
+
+## Directory Structure
+
+```
+ai-fundamentals-simple/
+├── instructor/           # Main curriculum (6 modules)
+├── docs/                 # Reference materials
+│   ├── getting_started.md
+│   ├── course_agenda.md
+│   ├── enterprise-ai-tools.md
+│   └── ai-first-transformation.md
+└── Learnings/            # Supplemental deep-dives
+```
 
 ## References
 
-### Papers
-- [Attention Is All You Need](https://arxiv.org/abs/1706.03762) - Transformer architecture
-- [BERT](https://arxiv.org/abs/1810.04805) - Bidirectional transformers
-- [GPT-3](https://arxiv.org/abs/2005.14165) - Large language models
-- [RAG](https://arxiv.org/abs/2005.11401) - Retrieval-augmented generation
+### Papers Worth Reading
 
-### Documentation
-- [The Annotated Transformer](https://nlp.seas.harvard.edu/2018/04/03/attention.html)
-- [HuggingFace Documentation](https://huggingface.co/docs)
-- [LangChain Documentation](https://python.langchain.com/docs/get_started/introduction.html)
+| Paper | Why It Matters |
+|-------|----------------|
+| [Attention Is All You Need](https://arxiv.org/abs/1706.03762) | The 2017 paper that started everything. Read the abstract and Section 3. |
+| [BERT](https://arxiv.org/abs/1810.04805) | Bidirectional training explained |
+| [GPT-3](https://arxiv.org/abs/2005.14165) | Where "emergent capabilities" became real |
+| [RAG](https://arxiv.org/abs/2005.11401) | Original retrieval-augmented generation paper |
 
-## Getting Started
+### Hands-On Resources
 
-See `docs/getting_started.md` for orientation and `docs/course_agenda.md` for topic progression.
-
-### Guides
-
-- `instructor/01-llm-foundations.md` - LLM concepts and transformer architecture
-- `instructor/02-agentic-ai.md` - Agentic AI systems and design patterns
-- `instructor/03-mcp-implementation.md` - Model Context Protocol
-- `instructor/04-rag-systems.md` - Retrieval Augmented Generation
-- `instructor/05-enterprise-integration.md` - Enterprise AI strategy
-- `instructor/06-pr-faq-validator.md` - Case study
+- [The Annotated Transformer](https://nlp.seas.harvard.edu/2018/04/03/attention.html) - Line-by-line code walkthrough
+- [HuggingFace Docs](https://huggingface.co/docs) - Model hub and APIs
+- [LangChain Docs](https://python.langchain.com/docs/get_started/introduction.html) - Agent framework
 
 ## Development
 
@@ -96,14 +145,10 @@ make format  # Format code with black and isort
 make clean   # Remove build artifacts
 ```
 
-### Tools
-
-- flake8 with plugins (docstrings, bugbear, comprehensions, simplify, pep8-naming)
-- black (line length: 100)
-- isort
-- pytest
-- pre-commit hooks
-
 ## License
 
 CC0 1.0 Universal - See LICENSE file.
+
+## Author
+
+Matt Bordenet ([@bordenet](https://github.com/bordenet))

@@ -216,8 +216,8 @@ This resource emphasizes:
 ## Supplementary Learning Materials
 
 ### Deep-Dive Content
-- [`Learnings/Transformers.md`](../Learnings/Transformers.md) - Advanced transformer concepts
-- [`Learnings/What_is_Inference.md`](../Learnings/What_is_Inference.md) - Model inference deep-dive
+- [`notes/Transformers.md`](../notes/Transformers.md) - Advanced transformer concepts
+- [`notes/Inference.md`](../notes/Inference.md) - Model inference deep-dive
 
 ### Strategic Planning Resources
 - [`docs/enterprise/ai_adoption_guide.md`](../docs/enterprise/ai_adoption_guide.md) - Enterprise adoption frameworks

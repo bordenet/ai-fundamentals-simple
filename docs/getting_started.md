@@ -69,7 +69,7 @@ ai-fundamentals-simple/
 
 #### Essential Reading:
 1. Complete all instructor guides in sequence
-2. Deep-dive into [`Learnings/`](../Learnings/) content
+2. Deep-dive into [`notes/`](../notes/) content
 3. Focus on architectural patterns and integration strategies
 
 #### Key Questions to Consider:

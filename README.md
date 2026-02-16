@@ -95,7 +95,7 @@ Real implementation: [pr-faq-validator](https://github.com/bordenet/pr-faq-valid
 
 ---
 
-## Directory Structure
+## Repository Structure
 
 ```
 ai-fundamentals-simple/
@@ -107,7 +107,6 @@ ai-fundamentals-simple/
 │   └── ai-first-transformation.md
 └── Learnings/            # Supplemental deep-dives
 ```
-
 ## References
 
 ### Papers Worth Reading
@@ -125,29 +124,11 @@ ai-fundamentals-simple/
 - [HuggingFace Docs](https://huggingface.co/docs) - Model hub and APIs
 - [LangChain Docs](https://python.langchain.com/docs/get_started/introduction.html) - Agent framework
 
-## Development
-
-### Setup
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements-dev.txt
-pre-commit install
-```
-
-### Commands
-
-```bash
-make test    # Run tests and linting
-make lint    # Run flake8
-make format  # Format code with black and isort
-make clean   # Remove build artifacts
-```
+---
 
 ## License
 
-CC0 1.0 Universal - See LICENSE file.
+MIT - See [LICENSE](LICENSE)
 
 ## Author
 
